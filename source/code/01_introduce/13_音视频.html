@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        audio 标签是用来向网页中引入一个外部的音频文件的
+            音视频文件引入时，默认情况下不允许用户自己控制播放和停止的
+
+        属性：
+            controls 是否允许用户控制播放
+            autoplay 音频文件是否自动播放
+                - 如果设置了 autoplay 则音乐在打开页面时会自动播放，
+                    但是目前来讲大部分浏览器都不会自动对音乐进行播放
+            loop 音乐是否循环播放
+     -->
+    <audio src="./source/audio.mp3" controls autoplay></audio>
+
+    <!-- 
+        除了通过 src 来指定外部文件的路径外，还可以通过 source 来指定文件
+     -->
+    <audio controls>
+        <!-- 对不起，您的浏览器不支持播放音频！请升级浏览器！ -->
+        <source src="./source/audio.mp3">
+        <source src="./source/audio.mp3">
+        <embed src="./source/audio.mp3" type="audio/mp3" width="400" height="50">
+    </audio>
+
+    <!-- 
+        使用 video 标签来向网页中引入一个视频
+            - 使用方式和 audio 标签基本是一样的
+     -->
+    <video controls>
+        <source src="./source/video.mp4">
+        <source src="./source/video.mp4">
+        <embed src="./source/video.mp4" type="video/mp4">
+    </video>
+
+    <iframe src="//player.bilibili.com/player.html?aid=77217003&bvid=BV1XJ411X7Ud&cid=132017557&page=26" scrolling="no"
+        border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="1600" height="900"> </iframe>
+</body>
+
+</html>
