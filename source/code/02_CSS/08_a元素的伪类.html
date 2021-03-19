@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>a 元素的伪类</title>
+
+    <style>
+        /*
+            :link 用来表示没有访问过的链接（正常的链接） 
+         */
+
+        a:link {
+            color: red;
+        }
+
+        /*
+            :visited 用来表示访问过的链接 
+
+            由于隐私的原因，所以 :visited 这个伪类只能修改链接的颜色
+         */
+
+        a:visited {
+            color: orange;
+        }
+
+        /*
+            :hover 用来表示鼠标移入的状态 
+         */
+
+        a:hover {
+            color: violet;
+            font-size: 50px;
+        }
+
+        /*
+            :active 用来表示鼠标点击时的状态 
+         */
+
+        a:active {
+            color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.没有访问过的链接
+        2.访问过的链接
+     -->
+    <a href="https://sxczst.github.io/">sxczst访问过的链接</a>
+    <br><br>
+    <a href="https://sxczst.gitee.io/">sxczst没访问过的链接</a>
+</body>
+
+</html>
