@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型_边框</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /*
+                边框：
+                    边框的宽度 border-width
+                    边框的颜色 border-color
+                    边框的样式 border-style 
+             */
+            /* 
+                border-width: 10px;
+                默认值：一般都是 3 个像素
+                border-width 可以用来指定四个方向的边框的宽度
+                    值的情况：
+                        四个值：上、右、下、左
+                        三个值：上、左右、下
+                        两个值：上下、左右
+                        一个值：上下左右
+                
+                除了 border-width 还有一组 border-xxx-width
+                    xxx 可以是 top right bottom left
+                    用来单独指定某一个边的宽度
+             */
+            /* border-width: 10px 20px 30px 40px; */
+            border-top-width: 10px;
+            border-right-width: 20px;
+            border-bottom-width: 30px;
+            border-left-width: 40px;
+
+            color: red;
+
+            /*
+                border-color 用来指定边框的颜色，同样可以分别指定四个边的边框
+                    规则和 border-width 一样
+                border-color 也可以省略不写
+                    如果省略了则自动使用 color 的颜色值。
+             */
+            border-color: orange red yellow blue;
+            border-color: teal;
+
+            /*
+                border-style 指定边框的样式
+                    solid   表示实线
+                    dotted  表示点状虚线
+                    dashed  表示虚线
+                    double  表示双线
+                
+                    border-style 的默认值是 none 表示没有边框
+             */
+            border-style: solid;
+            border-style: dotted;
+            border-style: dashed;
+            border-style: double;
+            border-style: solid dotted dashed double;
+
+            /*
+                border 简写属性，通过该属性可以同时设置边框所有的相关样式，并且没有顺序要求。 
+
+                除了 border 外还有四个 border-xxx
+                    border-top
+                    border-right
+                    border-bottom
+                    border-left
+             */
+            border: 10px orange solid;
+            border: red 10px solid;
+            border-top: teal 20px solid;
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+
+</body>
+
+</html>
